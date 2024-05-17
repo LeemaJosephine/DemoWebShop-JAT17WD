@@ -1,0 +1,47 @@
+Log4j
+
+Assertions:
+	Helps us to verify the condition of the test and decide whether test is passed or failed.
+
+2 Types:
+
+1. Hard Assertion
+2. Soft Assertion
+
+
+1. Hard Assertion
+	If there is any failure, it will not proceed further and stops the execution.
+
+Assert.assertTrue(boolean)  --> If the boolean value is true, asset will be true and test will pass.
+Assert.assertFalse(boolan)  --> If the boolan value is false, assert will be true and test will pass.
+Asser.assertEquals(actual,expected) --> If the expected and actual value matches, assert will be true and test will pass.
+
+
+2. Soft Assert
+	If there is any failure, it will inform the failure and proceed further with the execution.
+
+SoftAssertion obj = new SoftAssert();
+
+obj.assertTrue();
+obj.assertFalse();
+obj.assertEquals();
+obj.assertAll();  -- cause an exception when assert fails. Should be mentioned in the end of assert. 
+
+
+Page Object Model:
+
+4 packages:
+
+base  -- > browser launch, browser close, data provider
+pages --> HomePage.java, LoginPage.Java, etc.,
+test --> LoginTest.java --> 
+utils --> common code.
+
+
+
+
+
+ 
+
+
+
